@@ -42,7 +42,7 @@ def image_augmentation4(x_train, y_train, channel=3):
     
     return tmpx,tmpy
 
-def load_as_xy_resize(pathx,shrink_ratio=2,channel=3,center_hw=None,target_hw=None):
+def load_as_xy_resize(pathx,shrink_ratio=1,channel=3,center_hw=None,target_hw=None):
     onlydirs = [f for f in listdir(pathx) if isdir(join(pathx, f))]
     lst_tmpx = []
     lst_tmpy = []
